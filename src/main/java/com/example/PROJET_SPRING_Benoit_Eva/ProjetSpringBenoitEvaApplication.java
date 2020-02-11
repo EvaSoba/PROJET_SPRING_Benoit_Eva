@@ -8,7 +8,6 @@ public class ProjetSpringBenoitEvaApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ProjetSpringBenoitEvaApplication.class, args);
-		System.out.println("Hello world");
 		
 	}
 
