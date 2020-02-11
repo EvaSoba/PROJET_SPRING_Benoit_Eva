@@ -41,7 +41,7 @@ public class FootballController {
 		
 		List<Team> teams = result.getTeams().stream().map(
 				responseTeam -> {
-					return new Team(responseTeam.getId(),responseTeam.getName(),responseTeam.getTla());
+					return new Team(responseTeam.getId(),responseTeam.getName(),responseTeam.getTla(), responseTeam.getName());
 				}
 				).collect(Collectors.toList());
 				

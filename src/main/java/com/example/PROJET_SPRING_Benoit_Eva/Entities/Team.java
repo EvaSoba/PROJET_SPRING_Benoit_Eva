@@ -3,7 +3,8 @@ package com.example.PROJET_SPRING_Benoit_Eva.Entities;
 public class Team {
 	
 	public int id;
-	public Object area;
+	public Area area;
+	public String areaName;
 	public String name;
 	public String tla;
 	
@@ -11,10 +12,11 @@ public class Team {
 		
 	}
 	
-	public Team(int id, String name, String tla) {
+	public Team(int id, String name, String tla, String areaName) {
 		this.id = id;
 		this.name = name;
 		this.tla = tla;
+		this.areaName = areaName;
 	}
 	
 	
@@ -26,13 +28,13 @@ public class Team {
 		this.id = id;
 	}
 
-//	public Object getArea() {
-//		return area;
-//	}
-//
-//	public void setArea(Object area) {
-//		this.area = area;
-//	}
+	public Area getArea() {
+		return area;
+	}
+
+	public void setArea(Area area) {
+		this.area = area;
+	}
 
 	public String getName() {
 		return name;
